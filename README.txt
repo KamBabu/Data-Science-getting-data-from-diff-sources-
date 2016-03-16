@@ -1,3 +1,24 @@
+
+run_analysis.R Code walk thru.
+
+1. features.txt contains the header information for the X_train and X_test data. 
+   Extract column header that start with Std and Mean.  
+2. activity_labels.txt contains two vectors: id and activity description. 
+   Default header is V1 and V2 - replace with meaningful header names.
+3. Shape X_test data by merging activity ID column from Y_test data. 
+   Replacing activity ID with descriptive activity names.
+   Obtain subject id from subject_test.txt and merge subject id column to X_test data    
+4. Repeat step 3 with X_train.txt, Y_train.txt and Subject_train.txt
+5. Combine X_train and X_test data.
+6. Creating a tidy data from the above result.
+   Group by Subject and Activity type and Melt all other variables.
+   Summarize the mean for each Subject and Activity type.
+   Decast to put the variables back in individual columns to create a tidy dataset.
+7. Write the output. 
+
+
+-----------------------   Original content of Read ME.txt. --------------------------------------
+
 ===================================================================================================
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0

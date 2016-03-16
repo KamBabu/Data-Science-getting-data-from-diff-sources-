@@ -79,3 +79,4 @@ rm(STDnMeanCols)
 #-------------------------------------------- Write csv file  ---------------------------------------------------
 
 write.table(tidy_data,file = "./data/UCI HAR Dataset/tidy_data_output.csv",sep = ",",col.names = NA)
+write.table(tidy_data,file = "./data/UCI HAR Dataset/tidy_data_output.txt",sep = " ",row.names = FALSE)
